@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>News</title>
+</head>
+
+<body>
+        <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>User form</legend>
+                <p>
+                    <label for="username filed">username</label>
+                        <input type="text" name="Username" pattern="^[a-zA-Z]+$" placeholder="Input only letters" size="30" maxlength="12" required>     
+                </p>
+
+                <p>
+                    <label for="password field">password:</label>
+                        <input type="password" name="password" pattern="\d+" placeholder="Input only numbers" size="30" maxlength="8" required>
+                </p>
+
+                <button>Submit</button>
+        </form>    
+</body>
+
+</html>

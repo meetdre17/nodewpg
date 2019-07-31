@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User</h1>
+    <hr>
+        <form>
+            <label>Name</label>
+                <input type="text" placeholder="name" name="name">
+                    <fieldset>    
+                            <legend>Select a superhero</legend>
+                            <label for="superheros_list">SuperHeros:</label>
+                            <select name="superheros">
+                                    <option value="deadpool"> Deadpool</option>
+                                    <option value="batman_vs_superman"> Batman v Superman</option>
+                                    <option value="civil_war"> Captain America: Civil War</option>
+                                    <option value="doctor_strange"> Doctor Strange</option>
+                                    <option value="suicide_squad"> Suicide Squad</option>
+                                    <option value="apocalypse"> X-Men: Apocalypse</option>
+                                    <option value="gotg_vol2"> Guardians of the Galaxy Vol 2</option>
+                                    <option value="justice_league"> Justice League</option>
+                                    <option value="logan"> Logan</option>
+                                    <option value="homecoming"> Spider-Man: Homecoming</option>
+                                    <option value="wonder_woman" selected> Wonder Woman</option>
+                                    <option value="thor_ragnarok"> Thor: Ragnarok</option>
+                                    <option value="black_panther"> Black Panther</option>
+                            </select>
+
+                    </fieldset>            
+        </form>
+
+        <form>
+            <fieldset>
+                <legend>Bio</legend>
+                <textarea name="Bio" placeholder="Tell me about yourself" cols="80" rows="10" id="Bio"></textarea>
+            </fieldset>
+        </form>
+
+        <form>
+
+            <fieldset>
+                <legend>Upload an avatar image</legend>
+                    <form action="upload avatar" method="post" enctype="multipart/form-data">
+                        <input type="file" name="filename" />
+                    </form>
+            </fieldset>
+        </form>
+
+        <form>
+            <fieldset>
+                <form>
+                    <button value="clear form" name="clear form">clear form</button>
+                    <button value="user" name="new user">add new user</button>
+                </form>
+            </fieldset>    
+        </form> 
+        
+</body>
+
+</html>

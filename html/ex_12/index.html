@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create User</title>
+</head>
+
+<body>
+    <h1>Create User</h1>
+    <hr>
+    <form> 
+        <form action="create_user.html" method="GET" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>User form</legend>
+                    <label>username
+                        <input type="text" name="Username" placeholder="Username" size="30" maxlength="12">
+                    </label>
+                    <label>password:
+                        <input type="password" name="password" placeholder="password" size="30" maxlength="8">
+                    </label>
+                    <input type="submit" name="login" value="login"> 
+                </form>
+            </fieldset>
+        </form>
+        
+        <p>
+        <form>
+            <fieldset>
+            <label>Superhero
+                <p>Select your favourite superhero</p>
+                <input type="radio" name="superheros" value="Superman"> Superman
+                <input type="radio" name="superheros" value="Batman"> Batman
+                <input type="radio" name="superheros" value="Wonder Woman" checked> Wonder Woman
+                <input type="radio" name="superheros" value="Flash"> Flash
+                <input type="radio" name="superheros" value="Thor"> Thor
+                <input type="radio" name="superheros" value="Hulk"> Hulk
+            </label>
+            </fieldset>
+        </form>
+        </p>
+
+        <p>
+        <form>
+            <fieldset>
+            <label>Videogames
+                <p>Select your favourite video game</p>
+                <input type="checkbox" name="videogames" value="Fifa" checked="checked" > Fifa
+                <input type="checkbox" name="videogames" value="NHL"> NHL
+                <input type="checkbox" name="videogames" value="Resident Evil"> Resident Evil
+                <input type="checkbox" name="videogames" value="Uncharted" checked> Uncharted
+            </label>
+            </fieldset>
+        </form>
+        </p>
+
+        <form>
+            <input type="hidden" name="userid" value="2300">
+        </form>
+
+        <input type="image" alt="login" src="img/register_button.png" width="200" height="100">
+    </form>
+
+
+</body>
+</html>
