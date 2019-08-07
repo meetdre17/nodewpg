@@ -1,0 +1,10 @@
+var firstName = 'Samuel';
+var lastName = 'Enikanolaye';
+var age = 27;
+var dateOfBirth = '09/16/1991';
+var address = '178 Tallgrass Crescent';
+console.log('firstName: ', firstName);
+console.log('lastName: ', lastName);
+console.log('age: ', age);
+console.log('dateOfBirth: ', dateOfBirth);
+console.log('address: ', address);
