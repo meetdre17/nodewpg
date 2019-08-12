@@ -6,4 +6,4 @@ const thirdChar = text.charAt(8);
 
 const result = firstChar + secondChar + thirdChar;
 
-console.log(`The final result is`, result.toUpperCase());
+console.log(`The final result is, ${result.toUpperCase()}`);
