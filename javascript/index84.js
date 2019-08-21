@@ -1,6 +1,7 @@
 let star = '*';
 
-while (star.length <= 10) {
+do {
   console.log(star);
   star += '**';
 }
+while (star.length <= 10)
