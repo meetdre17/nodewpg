@@ -1,9 +1,10 @@
+
 let number = 9;
-let index = 9;
+let index = 1;
 
 do {
-    if (number * 1) 
-  console.log(number)
-  number += index;
+    let newNumber = number * index;
+    console.log(newNumber);
+    index++;
 }
-while (number <= 90) 
+while (index <= 10) 
