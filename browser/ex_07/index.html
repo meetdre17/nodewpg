@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    
     <script>
-        alert ('This program adds all the numbers you input');
-        let number = parseInt(prompt('input any number'));
-        for (i=0; i<=50; i++) {
-            console.log(i);
-            i+=number
-        }
+        let result = 0;
+        alert(`This program adds all the numbers you input`);
+        while (confirm(`would you like to enter a number?`)) {
+            const number = prompt('please enter a number');
+            result = result + parseInt(number);
+            //result = result + +number;
+            alert(`The result so far is: ${result}`);
+        }  
     </script>
 </head>
 <body>
@@ -20,7 +21,4 @@
 </body>
 </html>
 
-<!-- Not done as I'm not sure about the exercise -->
-
-
-
+<!-- Need to check if i'm right -->
