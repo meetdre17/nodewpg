@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <script>
+        let howLongStay = parseInt(prompt(`please enter how many second you would like to stay`));
+        
+        let timeToOut = setInterval(function() 
+        {
+            if( howLongStay >= 0 ) {
+                console.log( `The time is ${howLongStay--}` );
+            } else {
+                alert(`Your session has expired, come again soon!`);
+                clearInterval(timeToOut);
+            }        
+        }, 1000);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

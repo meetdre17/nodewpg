@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        window.onload = function() {
+        let username = prompt('username');
+        let password = prompt('password');
+        alert(`Welcome ${username}`);
+
+        setTimeout (function() {
+           const loggedIn = confirm(`Do you still want to be logged?`)
+
+        if (loggedIn) {
+            alert(`${username} your session has been restored`);
+        } else {
+            alert(`${username} your session has expired`);
+        }
+    }, 10000);
+};
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
