@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>It's all JavaScript Baby!!</title>
+
+    <script>
+        window.onload = function () {
+            const body = document.querySelector('body');
+            const numbers = [];
+            let counter = 0;
+            for (counter; counter <= 100; counter++) 
+                if (counter <= 100) {
+                    numbers.push(counter)
+            }
+            const ul = document.createElement('ul');
+            numbers.forEach(function(number){
+                let element = document.createElement('li');
+                if (number % 2 == 0) {
+                    element.style.color = 'blue'
+                }else {
+                    element.style.color = 'red'
+                }
+                element.innerText = `Item ${number}`;
+                ul.appendChild(element);
+            })
+            body.appendChild(ul);
+          }
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
