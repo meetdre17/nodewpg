@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+    <script>
+        window.onload = function() {
+            const link = document.querySelector('a');
+            let counter = 0;
+            // console.log(counter);
+            const scenarios = function(){
+                counter++;
+                if (counter == 1){
+                    link.style.background = 'red'
+                } else if (counter == 2){
+                    link.style.background = 'blue'
+                } else if (counter == 3){
+                    link.style.background = 'green'
+                } else if (counter == 4){
+                    link.style.background = 'grey'
+                }  else if (counter == 5){
+                    link.style.background = 'white'
+                }   
+            }
+            const message = function () {
+                if (counter == 1){
+                    alert (`The link background color is: red`)
+                } else if (counter == 2){
+                    alert (`The link background color is: blue`)
+                } else if (counter == 3){
+                    alert (`The link background color is: green`)
+                } else if (counter == 4){
+                    alert (`The link background color is: grey`)
+                } else if (counter == 5){
+                    alert (`The link background color is: white`)
+                } 
+            }
+            link.onmouseover = scenarios;
+            link.onmouseout = message;     
+        }
+    </script>
+  </head>
+  <body>
+    <div></div>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <script>
+        window.onload = function() {
+            const button = document.querySelector('button');
+            const button2 = document.getElementById('secondButton');
+            let yahoo = document.querySelector('#links');
+
+            // seperator to understand code ====================
+
+            const greeting = function (){
+                alert('using firstButton event listener');
+            }
+            button.addEventListener('click',greeting)
+            
+            const remove = function(){
+                button.removeEventListener('click',greeting);
+            }
+            button2.addEventListener('click',remove)
+
+            // seperator to understand code ====================
+
+            yahoo.addEventListener('click', function(event) {
+            event.preventDefault();
+            console.log('This link doesn\'t send us to a differen page as we\'re preventing the default behaviour');
+            });
+
+            const html = document.querySelector('html');
+            html.addEventListener('click', function(evt) {
+            alert(`x: ${evt.clientX}, y: ${evt.clientY}`); 
+        });                                             
+        } 
+    
+    </script>
+  </head>
+  <body>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+    <a href="https://yahoo.com" id="links">Link to yahoo</a>
+  </body>
+</html>

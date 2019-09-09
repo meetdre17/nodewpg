@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Products</title>
+
+    <script>
+        window.onload = function () {
+        const ul = document.querySelector('ul');
+        const bannana = ul.children.item(0);
+        const apple = ul.children.item(1);
+        const peach = ul.children.item(2);
+        const eggs = ul.children.item(3);
+        const tomatto = ul.children.item(4);
+        const lettuce = ul.children.item(5);
+        const milk = ul.children.item(6);
+
+        ul.removeChild(bannana);
+        ul.removeChild(apple);
+        ul.removeChild(peach);
+        ul.removeChild(eggs);
+        ul.removeChild(tomatto);
+        ul.removeChild(lettuce);
+        ul.removeChild(milk);
+    }
+    </script>
+  </head>
+  <body>
+    <ul>
+      <li>Bannana</li>
+      <li>Apple</li>
+      <li>Peach</li>
+      <li>Eggs</li>
+      <li>Tomatto</li>
+      <li>Lettuce</li>
+      <li>Milk</li>
+    </ul>
+  </body>
+</html>

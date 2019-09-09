@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Events</title>
+
+    <script>
+            window.onload = function() {
+            const html = document.querySelector('html');
+            const div = document.querySelector('div');
+            html.addEventListener('keypress', function(event) {
+            const character = String.fromCharCode(event.charCode);
+            console.log(`You pressed the: ${event.charCode}, key with the: ${character}`);
+            div.innerText += character;
+            });
+        }
+    </script>
+
+    <style>
+        div {
+            font-size: 20px;
+            color: red;
+            font-family: Arial, Helvetica, sans-serif;
+            padding-bottom: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div></div>
+    <button id="firstButton">Click Me!!</button>
+    <button id="secondButton">Remove event listener</button>
+    <a href="https://google.com">Link with JavaScript handler</a>
+  </body>
+</html>
