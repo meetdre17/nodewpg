@@ -7,30 +7,29 @@
   <script>
       window.onload = function(){
         const form = document.querySelector('form');
-        let formElements = form.elements;
+        let formElements = form.elements[0];
+        let formElements1 = form.elements[1];
         const button = formElements[2];
+
         formElements.onfocus = function() {
-            let counter = 0;
-            // console.log(counter);
-        let formElements = function(){
-                counter++;
-                if (counter){
-                    formElements.style.boxshadow = '2px 3px 170px 8px rgba(0,0,0,0.8'
-                } else if (counter >=1 ){
-                    formElements.style.boxshadow = '2px 3px 170px 8px rgba(0,0,0,0.8'
-                }
-            }
-            
+          formElements.style.boxShadow = ('0px 2px 62px -1px rgba(230,14,75,1');
+        }
+        formElements.onblur = function() {
+          formElements.style.boxShadow = ('');
         }
 
-        button.addEventListener("click", function() {
+        formElements1.onfocus = function() {
+          formElements1.style.boxShadow = ('0px 2px 62px -1px rgba(112,230,16,1');
+        }
+        formElements1.onblur = function() {
+          formElements1.style.boxShadow = ('');
+        }
             form.onsubmit = () => {
             event.preventDefault();
             inputUsername = form.elements[0].value;
             inputPassword = form.elements[1].value;
             alert(`Username: ${inputUsername} and Password: ${inputPassword}`);
          };
-        });
       }
   </script>
 </head>
